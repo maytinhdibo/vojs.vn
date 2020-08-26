@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VOJS - Hệ thống Tạp chí Khoa học Việt Nam</title>
+
+<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+
+
+<link rel="stylesheet" href="styles/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f70a6f4a6e.js" crossorigin="anonymous"></script>
+
+<body>
+    @@include('../layouts/header.html')
+
+    <div class="page intro">
+        <div style="margin:auto" id="intro" class="row container">
+            <div class="col-md-6">
+                <h1><b>Nâng cấp tạp chí của cơ quan bạn lên một công nghệ mới</b></h1>
+                <p>Với hệ thống VOJS các tạp chí tại Việt Nam sẽ được hỗ trợ tối đa. Chất lượng và thứ hạng của bài báo
+                    sẽ luôn luôn được đảm bảo.</p>
+                <button style="font-weight:500;padding: 6px 24px;" type="button" class="btn vojs-btn">Xem bảng
+                    giá</button>
+            </div>
+            <div style="text-align: center;" class="col-md-6 screen-col">
+                <div class="round-decor"></div>
+                <img class="landing-screen" src="img/screen.png">
+            </div>
+        </div>
+        <div class="round">
+            <span onclick="scrollBottom()" href="#highlight" id="scroll-bottom">
+                Khám phá nhiều hơn
+                <span style="display: block;">
+                    <img height="25px" src="img/down-arrow.svg" />
+                </span>
+            </span>
+            </span>
+        </div>
+    </div>
+
+    <div id="highlight" class="page highlight">
+        <div class="title">VOJS có gì mới?</div>
+        <div style="margin: auto;" class="row container list-feature">
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                <h4>
+                    Tích hợp plugin kiểm tra đạo văn/chính tả</h4>
+                <p> VOJS được hỗ trợ để tích hợp các hệ thống kiểm tra đạo văn và chính tả như Simidoc ngay sau khi tác
+                    giả gửi bài đến tạp chí. Đảm bảo được chất lượng các bài báo kể cả từ trước khi phản biện.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-indent"></i></span>
+                <h4>
+                    Hỗ trợ công việc lập chỉ mục Google Scholar và VCGate</h4>
+                <p>Tất cả bài báo được tối ưu các thẻ thông tin để các hệ thống lập chỉ mục và xếp hạng bài báo/tạp chí
+                    chính xác và nhanh chóng hơn. Tất cả các công việc lập chỉ mục sẽ được hoàn thành tự động nhằm nâng
+                    cao vị trí của tạp chí.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <h4>
+                    Hỗ trợ đầy đủ giao diện tiếng Việt</h4>
+                <p>Giao diện cho người đọc, tác giả và quy trình phản biện đều được Việt hóa hoàn toàn. Hỗ trợ tiếng
+                    Việt cho bài nộp và sửa lỗi hiển thị ngôn ngữ trên các bản OJS cũ.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-palette"></i></span>
+                <h4>
+                    Giao diện tùy biến theo ý tưởng của bạn</h4>
+                <p>Sẽ có nhiều giao diện tùy biến hơn trên VOJS, tạp chí của bạn có thể yêu cầu một thiết kế riêng theo
+                    yêu cầu.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <h4>
+                    Tài liệu về quy trình gửi bài/phản biện đầy đủ</h4>
+                <p>Bạn sẽ không phải loay hoay khi thực hiện thao tác trên hệ thống OJS cũ bằng tiếng Anh nữa, các hướng
+                    dẫn tiếng Việt sẽ được viết chi tiết ngay trên trang web này.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="icon"><i class="fas fa-laugh-wink"></i></span>
+                <h4>
+                    Đừng lo lắng!</h4>
+                <p>Tất cả tính năng trên OJS đều có ở đây, và nhiều... nhiều hơn thế nữa.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="title">Làm sao để đặt hàng VOJS?</div>
+    </div>
+
+    @@include('../layouts/footer.html')
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
