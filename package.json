@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/maytinhdibo/vojs.vn#readme",
   "dependencies": {
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
+    "gulp-live-server": "0.0.31",
     "gulp-sass": "^4.1.0"
   }
 }
