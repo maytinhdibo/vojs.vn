@@ -407,10 +407,42 @@ footer {
             min-height: auto;
         }
     }
+    .timeline{
+        height: 640px;
+    }
+    .timeline::before{
+        content: "";
+        position: absolute !important;
+        top: 12.5% !important;
+        transform: translatex(-50%)!important;
+        width: 0 !important;
+        height: 75%!important;
+        left: calc(100% - 327px ) !important;
+        border: 3px solid var(--primary-color)!important;
+        
+    }
+    .timeline-item{
+        display: flex;
+    }
+    .timeline-item .icon{
+        margin-right: 50px !important;
+        margin-left: calc(100% - 355px) !important;
+    }
+    .timeline-content{
+        text-align: center;
+        width: 115px;
+        padding-top: 50px;
+    }
+    // .timeline-content{
+    //     h5 {
+    //         m
+    //     }
+    // }
 }
 
 
 .timeline {
+    margin-top: 100px !important;
     width: 100%;
     position: relative;
     top: 31%;
@@ -418,20 +450,54 @@ footer {
     display: flex;
     text-align: center;
 }
-.timeline{
-    .timeline-item{
-        border: 1px solid #005387;
+.timeline-item {
+    text-align: center;
+    position: relative;
+}
+
+.timeline-item {
+
+    .icon i{
+        color: var(--primary-color);
+        font-size: 48px;
     }
-    .timeline-item-icon{
-        border-width: 2px;
-        border-color: #0088cc;
-        border-style: solid;
-        border-radius: 5px;
-        padding: 15px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        background: #0088cc;
+       
+    .icon {
+        line-height: 130px;
+        text-align: center;
+        height: 115px;
+        width: 115px;
+        margin: auto;
+        border-radius: 9px;
+        margin-bottom: 1.5em;
+        border: 5px solid var(--primary-color);
+        background: var(--white);
+    }
+
+}
+
+.timeline::before{
+    position: absolute;
+    top: 62.5px;
+    transform: translateY(-50%);
+    content:"";
+    width: 75%;
+    left: 12.5%;
+    border: 3px solid var(--primary-color);
+
+}
+.timeline-content{
+    h5 {
+        font-weight: 100;
+        color: var(--white);
+        background: var(--primary-color);
+        border-radius: 60px;
+        display: block;
+        width: 105px;
+        height: 35px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: unset;
     }
 }
