@@ -235,7 +235,9 @@ p {
             }
         }
     }
+
 }
+
 
 .btn.vojs-btn {
     background: var(--primary-color);
@@ -404,5 +406,32 @@ footer {
             display: block;
             min-height: auto;
         }
+    }
+}
+
+
+.timeline {
+    width: 100%;
+    position: relative;
+    top: 31%;
+    z-index: -1;
+    display: flex;
+    text-align: center;
+}
+.timeline{
+    .timeline-item{
+        border: 1px solid #005387;
+    }
+    .timeline-item-icon{
+        border-width: 2px;
+        border-color: #0088cc;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        background: #0088cc;
     }
 }
