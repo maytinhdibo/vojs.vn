@@ -10,6 +10,7 @@
 
 <link rel="stylesheet" href="styles/css/style.css">
 <link rel="stylesheet" href="styles/css/reponsive.css">
+<link rel="stylesheet" href="styles/css/price.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -25,41 +26,27 @@
     <div class="page">
         <div class="title">Bảng giá</div>
         <div style="margin:auto" class="row container">
-            <div class="col-md-4 ">
-                <div class="price-card">
-                    <div class="header">
-                        <h4>Gói một lần</h4>
-                    </div>
-                    <div class="container">
-                        <ul>
-                            <li>Được lựa chọn giao diện</li>
-                            <li>Hỗ trợ cài đặt</li>
-                            <li>Được cung cấp tài liệu hướng dẫn</li>
-                            <li class="none">Kiểm tra đạo văn trên Simidoc</li>
-                            <li class="none">Hỗ trợ qua kênh chat</li>
-                        </ul>
-                        <button type="button" class="btn btn-block vojs-btn">Đặt hàng ngay</button>
-                    </div>
+            <div class="col-md-6 left-price">
+                <div class="time">
+                    <button>Monthly</button>
+                    <button>Yearly</button>
+                </div>
+                <div class="container">
+                    <li class="item" > All limited links
+                        <i class="fas fa-check-circle"></i>
+                    </li>
+                    <li class="item"> Own analytics platform
+                        <i class="fas fa-check-circle"></i>
+                    </li>
+                    <li class="item">Chat support
+                        <i class="fas fa-check-circle"></i>
+                    </liv>
+                    <li class="item">Optimizq hashtags
+                        <i class="fas fa-check-circle"></i>
+                    </li>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="price-card">
-                    <div class="header">
-                        <h4>Gói Simidoc</h4>
-                    </div>
-                    <div class="container">
-                        <ul>
-                            <li>Được lựa chọn giao diện</li>
-                            <li>Hỗ trợ cài đặt</li>
-                            <li>Được cung cấp tài liệu hướng dẫn</li>
-                            <li>Kiểm tra đạo văn trên Simidoc</li>
-                            <li class="none">Hỗ trợ qua kênh chat</li>
-                        </ul>
-                        <button type="button" class="btn btn-block vojs-btn">Đặt hàng ngay</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="price-card">
                     <div class="header">
                         <h4>Gói trọn đời</h4>
@@ -72,9 +59,12 @@
                             <li>Kiểm tra đạo văn trên Simidoc</li>
                             <li>Hỗ trợ qua kênh chat</li>
                         </ul>
-                        <button type="button" class="btn btn-block vojs-btn">Đặt hàng ngay</button>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6 "></div>
+            <div class="col-md-6 ">
+                <button type="button" class="btn vojs-btn">Đặt hàng ngay</button>
             </div>
         </div>
 

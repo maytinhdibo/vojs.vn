@@ -1,0 +1,43 @@
+{ "section": 
+[{
+    "name": "Yêu cầu cài đặt",
+    "idSection": "#section_1",
+    "chapter": [{
+        "name" : "Cấu hình máy chủ",
+        "idChapter": "#chapter_1_1",
+        "data": "a.txt"
+    },
+    {
+        "name" : "Lựa chọn cấu hình",
+        "idChapter": "#chapter_1_2",
+        "data" : "b.txt"
+    }]
+},
+{
+    "name": "Hướng dẫn đăng bài nhanh",
+    "idSection": "#section_2",
+    "chapter": [{
+        "name" : "Tạo số báo",
+        "idChapter": "#chapter_2_1",
+        "data": "b.txt"
+    },
+    {
+        "name" : "Tạo bài báo",
+        "idChapter": "#chapter_2_2",
+        "data" : "a.txt"
+    }]
+},{
+    "name": "Hướng dẫn quy trình phản biện",
+    "idSection": "#section_3",
+    "chapter": [{
+        "name" : "Tạo số báo",
+        "idChapter": "#chapter_3_1",
+        "data": "a.txt"
+    },
+    {
+        "name" : "Tạo bài báo",
+        "idChapter": "#chapter_3_2",
+        "data" : "a.txt"
+    }]
+}]
+}
