@@ -27,43 +27,50 @@
         <div class="title">Bảng giá</div>
         <div style="margin:auto" class="row container">
             <div class="col-md-6 left-price">
-                <div class="time">
-                    <button>Monthly</button>
-                    <button>Yearly</button>
-                </div>
-                <div class="container">
-                    <li class="item" > All limited links
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="item"> Own analytics platform
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="item">Chat support
-                        <i class="fas fa-check-circle"></i>
-                    </liv>
-                    <li class="item">Optimizq hashtags
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                </div>
-            </div>
-            <div class="col-md-6">
                 <div class="price-card">
-                    <div class="header">
-                        <h4>Gói trọn đời</h4>
+                    <div class="header title-price ">
+                        <h4>Gói cơ bản</h4>
                     </div>
-                    <div class="container">
+                    <div class="container-item">
                         <ul>
-                            <li>Được lựa chọn giao diện</li>
-                            <li>Hỗ trợ cài đặt</li>
-                            <li>Được cung cấp tài liệu hướng dẫn</li>
-                            <li>Kiểm tra đạo văn trên Simidoc</li>
-                            <li>Hỗ trợ qua kênh chat</li>
+                            <li> Cài đặt<sup>1</sup> </li>
+                            <li> Thiết kế giao diện cơ bản<sup>2</sup></li>
+                            <li>Hỗ trợ tăng SEO trên Google Scholar</liv>
+                            <li>Hướng dẫn sử dụng cơ bản: 2 buổi<sup>3</sup></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 "></div>
-            <div class="col-md-6 ">
+            <div class="col-md-6 right-price">
+                <div class="price-card">
+                    <div class="header title-price ">
+                        <h4>Gói bổ sung</h4>
+                    </div>
+                    <div class="container-item">
+                        <!-- <ul>
+                            <li class="item">Tùy chỉnh giao diện nâng cao<sup>4</sup></li>
+                            <li class="item">Plugin kiểm tra trùng lặp văn bản<sup>5</sup></li>
+                            <li class="item">Thuê máy chủ + vận hành, nâng cấp </li>
+                            <li class="item">Hướng dẫn quy trình phản biện</li>
+                            <li class="item">Vận hành, nâng cấp tại máy chủ đơn vị(tính từ năng thứ 2)</li>
+                        </ul> -->
+                        <div class="item" isClick ="false"><i class="far fa-circle "></i>Tùy chỉnh giao diện nâng cao<sup>4</sup></div>
+                        <div class="item" isClick ="false"><i class="far fa-circle"></i>Plugin kiểm tra trùng lặp văn bản<sup>5</sup></div>
+                        <div class="item" isClick ="false"><i class="far fa-circle"></i>Thuê máy chủ + vận hành, nâng cấp </div>
+                        <div class="item" isClick ="false"><i class="far fa-circle"></i>Hướng dẫn quy trình phản biện</div>
+                        <div class="item" isClick ="false"><i class="far fa-circle"></i>Vận hành, nâng cấp tại máy chủ đơn vị(tính từ năng thứ 2)</div>
+                    </div>
+                </div>
+            </div>
+            <hr width="100%" align="center" />
+            <div class="col-md-6 comment">
+                <div><sup>1</sup> Đơn vị đảm bảo hạ tầng, hệ điều hành trước khi cài đặt</div>
+                <div><sup>2</sup>Bao gồm logo, hình ảnh chính, màu chủ đạo, các thông tin liên hệ</div>
+                <div><sup>3</sup>Hướng dẫn trực tuyến (online) và tài liệu hướng dẫn sử dụng cơ bản</div>
+                <div><sup>4</sup>Phụ thuộc vào mức độ yêu cầu chỉnh sửa của đơn vị</div>
+                <div><sup>5</sup>Tối đa 1000 bài báo trong vòng 1 năm</div>
+            </div>
+            <div class="col-md-6 price-bottom">
                 <button type="button" class="btn vojs-btn">Đặt hàng ngay</button>
             </div>
         </div>
@@ -74,6 +81,7 @@
     @@include('../layouts/footer.html')
 
     <script src="js/index.js"></script>
+    <script src="js/price.js"></script>
 </body>
 
 </html>
