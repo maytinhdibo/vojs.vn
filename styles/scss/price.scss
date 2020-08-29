@@ -1,7 +1,8 @@
 .item {
-    height: 55px;
+    min-height: 55px;
     line-height: 50px;
-    min-width: 525px;
+    width: 96%;
+    min-width: auto;
     text-align: left;
     padding: 0px 0px 0px 25px;
     list-style: none !important;
@@ -18,14 +19,20 @@
 
 .left-price {
     li {
-        padding: 5px;
+        padding: 10px;
     }
 }
-i{
+
+i {
     margin-right: 20px;
 }
 
 .item:hover {
+    background-color: #3c488e;
+    color: #fff;
+}
+
+.tick {
     background-color: #3c488e;
     color: #fff;
 }
@@ -64,12 +71,14 @@ sup {
     button {
         height: 60px;
         border: 2px solid #f9f9fb;
-        border-radius: 15px;
+        border-radius: 28px;
         margin-right: 36px;
+        padding: 0px 25px 0px 25px;
     }
 }
-.fa-check-circle{
-   color: #76e162;
+
+.fa-check-circle {
+    color: #76e162;
 }
 
 @media (max-width: 770px) {
@@ -82,7 +91,29 @@ sup {
         text-align: center;
     }
 
+    .item {
+        height: auto;
+        min-width: auto;
+        line-height: 30px !important;
+
+    }
+
     // .price-card {
     //     min-width: 777px;
     // }
+
+}
+
+.col-xl-6 {
+    width: auto !important;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 83% !important;
+    }
+
 }

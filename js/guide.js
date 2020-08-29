@@ -25,15 +25,13 @@ async function renderMenu() {
 function createMenuItem(hrefValue, className, text, isClick = 'false') {
     li = document.createElement("li");
     a = document.createElement("a");
-    // setAttribute("class","nav-item",li);
     setAttribute("href", hrefValue, a);
-    setAttribute("class", className, a);
-    // a.classList.add("nav-link");
+    setAttribute("class", className, li);
     setAttribute("isClick", isClick, a);
     var textnode = document.createTextNode(text);         // Create a text node
-    a.appendChild(textnode);
-    li.appendChild(a);
-    return li;
+    li.appendChild(textnode);
+    a.appendChild(li);
+    return a;
 
 }
 function setAttribute(nameAttribute, valueAttribute, element) {
