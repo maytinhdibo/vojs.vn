@@ -10,7 +10,6 @@ async function renderMenu() {
 
                 for (j = 0; j < obj.section[i].chapter.length; j++) {
                     paraChapter = document.createElement("ul");
-                    // paraChapter.classList.add("navbar-nav");
                     chapterMenu = createMenuItem(obj.section[i].chapter[j].idChapter, "chapter", obj.section[i].chapter[j].name);
                     paraChapter.appendChild(chapterMenu);
                     child.appendChild(paraChapter);
@@ -22,12 +21,11 @@ async function renderMenu() {
 }
 
 
-function createMenuItem(hrefValue, className, text, isClick = 'false') {
+function createMenuItem(hrefValue, className, text) {
     li = document.createElement("li");
     a = document.createElement("a");
     setAttribute("href", hrefValue, a);
-    setAttribute("class", className, li);
-    setAttribute("isClick", isClick, a);
+    setAttribute("class", className, a);
     var textnode = document.createTextNode(text);         // Create a text node
     li.appendChild(textnode);
     a.appendChild(li);

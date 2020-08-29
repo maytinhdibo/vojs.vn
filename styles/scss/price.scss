@@ -9,6 +9,9 @@
     border: 2px solid #f9f9fb;
     border-radius: 15px;
     margin: 9px;
+    b {
+        text-align: right;
+    }
 
 }
 
@@ -80,7 +83,11 @@ sup {
 .fa-check-circle {
     color: #76e162;
 }
-
+.container-item{
+    .row{
+        margin-left: 9px;
+    }
+}
 @media (max-width: 770px) {
     .container-item {
         max-width: 777px;
@@ -98,19 +105,10 @@ sup {
 
     }
 
-    // .price-card {
-    //     min-width: 777px;
-    // }
-
-}
-
-.col-xl-6 {
-    width: auto !important;
-    margin: auto;
 }
 
 @media (min-width: 768px) {
-    .col-md-6 {
+    .col-md- {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 83% !important;
