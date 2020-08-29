@@ -1,20 +1,102 @@
-#menu {
+.guide {
+    height: calc(100vh - 73px);
+    margin: 0 !important;
 
-}
-#menu {
-    .title{
-        font-weight: 700;
+    #content {
+        height: 100%;
+    }
+
+    .toc-btn {
+        display: none;
+    }
+
+    #menu {
+        height: 100%;
+        border-right: 1px solid #eee;
+        background-color: #fdfefe;
+        padding: 0;
+
+        .toc-header {
+            font-weight: 700;
+            padding: 9px 12px;
+            text-align: center;
+            .close-btn{
+                display: none;
+            }
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+
+        .red {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            color: var(--text-color);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .section {
+            display: block;
+            background: rgba(167, 167, 167, 0.3);
+            font-weight: 700;
+            padding: 6px;
+
+            li {
+                margin: 0em;
+            }
+        }
+
+        .chapter {
+            display: block;
+            padding: 9px;
+        }
     }
 }
-.red {
-    background-color: red;
-    color :white;
-}
-ul {
-    list-style: none;
-    }
-.section {
-    li {
-        margin: 0em;
+
+@media only screen and (max-width: 767px) {
+    .guide {
+        position: relative;
+
+        #menu {
+            border: none;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            right: 100%;
+            transition: 0.5s;
+            .toc-header{
+                .close-btn{
+                    display: block;
+                    float: right;
+                }
+            }
+        }
+
+        .toc-btn {
+            background: var(--primary-color);
+            position: absolute;
+            display: block;
+            padding: 9px 12px;
+            cursor: pointer;
+            right: 0;
+            top: 0;
+            color: var(--white);
+            font-weight: 700;
+            border-radius: 0 0 0 6px;
+            z-index: 1;
+        }
     }
 }

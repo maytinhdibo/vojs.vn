@@ -23,9 +23,13 @@
 
 <body>
     @@include('../layouts/header.html')
-    <div class="row">
+    <div class="row guide">
+        <span onclick="openMenu()" class="toc-btn">Mục lục</span>
         <div id="menu" class="col-md-3">
-            <div>Table of content</div>
+            <div class="toc-header">
+                Mục lục
+                <span class="close-btn" onclick="closeMenu()"><i class="fas fa-times"></i></span>
+            </div>
             <ul>
             </ul>
 
