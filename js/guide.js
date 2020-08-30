@@ -25,7 +25,9 @@ function createMenuItem(hrefValue, className, text) {
     li = document.createElement("li");
     a = document.createElement("a");
     setAttribute("href", hrefValue, a);
-    setAttribute("class", className, a);
+    setAttribute("class", className, li);
+    data = hrefValue.slice(1);
+    setAttribute("data", data, li);
     var textnode = document.createTextNode(text);         // Create a text node
     li.appendChild(textnode);
     a.appendChild(li);
@@ -59,7 +61,8 @@ document.addEventListener("DOMContentLoaded", async function (event) {
             
             chapter.classList.add("red");
             chapter.setAttribute("isClick", "true");
-            datafile = chapter.getAttribute("href").slice(1);
+            // datafile = chapter.getAttribute("href").slice(1);
+            datafile = chapter.getAttribute("data");
             path = '/guides/' + datafile + '.md'
 
             closeMenu();

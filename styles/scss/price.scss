@@ -1,6 +1,6 @@
 .item {
     min-height: 55px;
-    line-height: 50px;
+    line-height: 40px;
     width: 96%;
     min-width: auto;
     text-align: left;
@@ -87,6 +87,14 @@ sup {
     .row{
         margin-left: 9px;
     }
+}
+.item-price{
+    padding: 0px 25px 10px 40px;
+    text-align: right;
+
+}
+h4{
+    line-height: 27px !important;
 }
 @media (max-width: 770px) {
     .container-item {
