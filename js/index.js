@@ -11,3 +11,6 @@ $(function(){
   $('a[href="'+activeurl+'"]').parent('li').addClass('active');
 
 });
+function Redirect() {
+  window.location.pathname="/price.html";
+}
