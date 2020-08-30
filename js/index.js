@@ -5,3 +5,9 @@ function scrollBottom(){
         behavior: 'smooth' 
       });
 }
+$(function(){
+
+  var activeurl = window.location.pathname;
+  $('a[href="'+activeurl+'"]').parent('li').addClass('active');
+
+});
