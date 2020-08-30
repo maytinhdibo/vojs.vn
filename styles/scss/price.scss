@@ -1,10 +1,10 @@
 .item {
     min-height: 55px;
-    line-height: 40px;
+    line-height: 35px;
     width: 96%;
     min-width: auto;
     text-align: left;
-    padding: 0px 0px 0px 25px;
+    padding: 10px 0px 0px 25px;
     list-style: none !important;
     border: 2px solid #f9f9fb;
     border-radius: 15px;
@@ -23,6 +23,9 @@
     li {
         padding: 10px;
     }
+    .price-card {
+        padding-bottom: 0px !important;
+    }
 }
 
 i {
@@ -40,10 +43,6 @@ i {
 }
 
 .price-card {
-    padding-bottom: 0px !important;
-
-
-
     .icon-price {
         text-align: right !important;
     }
