@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async function (event) {
             chapter.classList.add("red");
             chapter.setAttribute("isClick", "true");
             datafile = chapter.getAttribute("href").slice(1);
-            path = '/guides/' + datafile + '.txt'
+            path = '/guides/' + datafile + '.md'
 
             closeMenu();
             
