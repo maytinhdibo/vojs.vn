@@ -37,29 +37,6 @@
             ]
         },
         {
-            "name": "Hướng dẫn quy trình phản biện",
-            "idSection": "#section_3",
-            "chapter": [
-                {
-                    "name": "Gửi bài báo",
-                    "idChapter": "#chapter_3_1"
-                },
-                {
-                    "name": "Phản biện bài báo",
-                    "idChapter": "#chapter_3_2"
-                },
-                {
-                    "name": "Chỉnh sửa bài báo",
-                    "idChapter": "#chapter_3_2"
-                },
-                {
-                    "name": "Xuất bản bài báo",
-                    "idChapter": "#chapter_3_4"
-                }
-                
-            ]
-        },
-        {
             "name": "Các câu hỏi thường gặp",
             "idSection": "#section_4",
             "chapter": [
