@@ -4,13 +4,15 @@
     width: 96%;
     min-width: auto;
     text-align: left;
-    padding: 10px 0px 0px 25px;
+    padding: 10px;
     list-style: none !important;
     border: 2px solid #f9f9fb;
     border-radius: 15px;
     margin: 9px;
+    cursor: pointer;
     b {
-        text-align: right;
+       opacity :0.5; 
+       font-size: medium;
     }
 
 }
@@ -24,7 +26,7 @@ sup{
 }
 .left-price {
     li {
-        padding: 10px 10px 0px 40px;
+        padding: 10px 10px 0px 30px;
     }
     .price-card {
         // padding-bottom: 0px !important;
@@ -32,7 +34,7 @@ sup{
 }
 
 i {
-    margin-right: 20px;
+    margin: auto;
 }
 
 .item:hover {
@@ -86,12 +88,13 @@ hr {
     color: #76e162;
 }
 .container-item{
+    font-size: large;
     .row{
         margin-left: 9px;
     }
 }
 .item-price{
-    padding: 0px 25px 10px 40px;
+    // padding: 0px 25px 10px 40px;
     // text-align: right;
 
 }
