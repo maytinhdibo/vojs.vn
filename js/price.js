@@ -1,16 +1,16 @@
-const items = document.querySelectorAll(".item i");
-console.log(items)
+const items = document.querySelectorAll(".item");
+
 items.forEach(item => {
     item.addEventListener("click", function (evt) {
-
+        item_icon = item.childNodes[1].childNodes[0];
         if (item.getAttribute("isClick") == "true") {
-            item.classList.remove("fa-check-circle")
-            item.classList.add("fa-circle")
+            item_icon.classList.remove("fa-check-circle")
+            item_icon.classList.add("fa-circle")
             item.setAttribute("isClick", "false");
         }
         else {
-            item.classList.add("fa-check-circle")
-            item.classList.remove("fa-circle")
+            item_icon.classList.add("fa-check-circle")
+            item_icon.classList.remove("fa-circle")
             item.setAttribute("isClick", "true");
         }
 

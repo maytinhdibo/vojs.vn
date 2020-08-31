@@ -506,3 +506,8 @@ footer {
     line-height: unset;
     }
 }
+.active{
+    .fas{
+        color: var(--white) !important;
+    }
+}
