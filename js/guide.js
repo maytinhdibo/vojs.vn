@@ -18,6 +18,11 @@ async function renderMenu() {
                 console.log(paraSection);
             }
         })
+        const chapter = document.querySelectorAll("#menu .chapter")[0];
+        console.log(chapter);
+        chapter.classList.add("red");
+        chapter.setAttribute("isClick", "true");
+        closeMenu();
         fetch('/guides/chapter_1_1.md')
         .then(response => response.text())
         .then(data => {
