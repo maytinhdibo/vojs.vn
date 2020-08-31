@@ -18,12 +18,32 @@ async function renderMenu() {
                 console.log(paraSection);
             }
         })
-        const chapter = document.querySelectorAll("#menu .chapter")[0];
-        console.log(chapter);
-        chapter.classList.add("red");
-        chapter.setAttribute("isClick", "true");
-        closeMenu();
-        fetch('/guides/chapter_1_1.md')
+
+        renderContent();
+ 
+}
+function renderContent(){
+    var urlHash = window.location.hash.slice(1);
+    const chapters = document.querySelectorAll("#menu .chapter")
+    if (urlHash == "") {
+        chapter = chapters[0];
+        tickChapter(chapter)
+        path = '/guides/chapter_1_1.md'
+        window.location.hash = "#chapter_1_1"
+    }
+    else {
+        chapters.forEach(chapter => {
+
+            if (urlHash == chapter.getAttribute("data")) {
+                tickChapter(chapter)
+                console.log(chapter.getAttribute("data"))
+
+            }
+        })
+        path = path = '/guides/' + urlHash + '.md'
+    }
+    closeMenu();
+    fetch(path)
         .then(response => response.text())
         .then(data => {
             document.querySelector("#content").innerHTML = marked(data);
@@ -68,15 +88,14 @@ document.addEventListener("DOMContentLoaded", async function (event) {
                     chapters[i].setAttribute("isClick", "false");
                 }
             }
-            
-            chapter.classList.add("red");
-            chapter.setAttribute("isClick", "true");
+
+            tickChapter(chapter)
             // datafile = chapter.getAttribute("href").slice(1);
             datafile = chapter.getAttribute("data");
             path = '/guides/' + datafile + '.md'
 
             closeMenu();
-            
+
             fetch(path)
                 .then(response => response.text())
                 .then(data => {
@@ -92,4 +111,8 @@ function openMenu() {
 
 function closeMenu() {
     document.querySelector(".guide #menu").removeAttribute("style");
+}
+function tickChapter(chapter) {
+    chapter.classList.add("red");
+    chapter.setAttribute("isClick", "true");
 }
