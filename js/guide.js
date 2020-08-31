@@ -18,6 +18,11 @@ async function renderMenu() {
                 console.log(paraSection);
             }
         })
+        fetch('/guides/chapter_1_1.md')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("#content").innerHTML = marked(data);
+        });
 }
 
 
