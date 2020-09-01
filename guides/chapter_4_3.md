@@ -1,14 +1,11 @@
-> **Dữ liệu của VOJS**
+> **Điều khoản và hỗ trợ sử dụng**
 
 
-**1. Dữ liệu của tôi có đảm bảo an toàn không?**
-- Hệ thống VOJS đảm bảo dữ liệu an toàn và chỉ đơn vị của bạn mới có quyền truy cập được.
+**1. Hướng dẫn sử dụng tôi có thể chia sẻ cho người khác không?**
+- Hướng dẫn sử dụng bạn có thể chia sẻ cho người khác. 
 
-**2. Hệ thống có hỗ trợ backup dữ liệu không?**
-- Hệ thống VOJS hỗ trợ backup dữ liệu với cloud. Tuy nhiên, hiện tại hê thống không hỗ trợ với self-host.
+**2. Tôi muốn được hướng dẫn trực tiếp về cách sử dụng có được không?**
+- Hiện tại, chúng tôi chỉ hỗ trợ online. Nếu bạn gặp vấn đề khác, vui lòng liên hệ trực tiếp cho [chúng tôi](#chapter_4_1).
 
-**3. Tôi chỉ muốn trang web của tôi hiển thị tiếng việt hoặc tiếng anh có được không?**
-- Hệ thống VOJS hỗ trợ đa ngôn ngữ. Bạn có thể điều chỉnh trang web chỉ hiển thị tiếng Việt hoặc tiếng Anh
-
-**4. Làm thế nào để tích hợp email thông báo?**
-- Để tích hợp email thông báo bạn thực hiện theo các bước [tại đây](/). Nếu bạn gặp vấn đề, vui lòng liên hệ trực tiếp cho [chúng tôi](/aboutUs.html). 
+**3. Tôi muốn hướng dẫn về quy trình phản biện thì làm thế nào?**
+- Bạn muốn được hướng dẫn thực hiên quy trình phản biện, vui lòng liên hệ trực tiếp cho [chúng tôi](#chapter_4_1).

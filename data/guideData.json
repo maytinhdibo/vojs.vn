@@ -41,21 +41,26 @@
             "idSection": "#section_4",
             "chapter": [
                 {
-                    "name": "Sở hữu một tạp chí trên nền tảng VOJS",
+                    "name": "Các thức liên lạc",
                     "idChapter": "#chapter_4_1"
                 },
                 {
-                    "name": "Điều khoản và hỗ trợ sử dụng",
+                    "name": "Sở hữu một tạp chí trên nền tảng VOJS",
                     "idChapter": "#chapter_4_2"
                 },
                 {
-                    "name": "Dữ liệu của VOJS",
+                    "name": "Điều khoản và hỗ trợ sử dụng",
                     "idChapter": "#chapter_4_3"
                 },
                 {
-                    "name": "Điểm khác biệt của VOJS",
+                    "name": "Dữ liệu của VOJS",
                     "idChapter": "#chapter_4_4"
+                },
+                {
+                    "name": "Điểm khác biệt của VOJS",
+                    "idChapter": "#chapter_4_5"
                 }
+                
             ]
         }
     ]

@@ -2,7 +2,7 @@
     min-height: 55px;
     line-height: 30px;
     width: 96%;
-    min-width: 430px;
+    min-width: auto;
     text-align: left;
     padding: 10px;
     list-style: none !important;
@@ -10,30 +10,47 @@
     border-radius: 15px;
     margin: 9px;
     cursor: pointer;
+    position: relative;
+
     b {
-       opacity :0.5; 
-       font-size: medium;
+        opacity: 0.5;
+        font-size: medium;
     }
 
+}
+
+
+i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+}
+
+.item-content {
+    padding-left: 56px;
 }
 
 .left-price {
     margin: auto;
 }
-sup{
+
+sup {
     font-size: 10px !important;
     padding: 5px;
 }
+
 .left-price {
     li {
         padding: 10px 10px 0px 30px;
     }
+
     .price-card {
         // padding-bottom: 0px !important;
     }
 }
 
-i {
+.col-1 {
     margin: auto;
 }
 
@@ -65,6 +82,7 @@ hr {
     div {
         margin: auto;
     }
+
     sup {
         font-size: small !important;
     }
@@ -86,23 +104,29 @@ hr {
 .fa-check-circle {
     color: #76e162;
 }
-.container-item{
+
+.container-item {
     font-size: large;
-    .row{
+
+    .row {
         margin-left: 9px;
     }
 }
-.item-price{
+
+.item-price {
     // padding: 0px 25px 10px 40px;
     // text-align: right;
 
 }
-h4{
+
+h4 {
     line-height: 27px !important;
 }
-.comment{
+
+.comment {
     line-height: 35px;
 }
+
 @media (max-width: 770px) {
     .container-item {
         max-width: 777px;
@@ -115,15 +139,15 @@ h4{
 
     .item {
         height: auto;
-        min-width: auto;
         line-height: 30px !important;
-        display: block !important;
 
     }
+
     .comment {
         border-right: 0px !important;
     }
-    .price-card{
+
+    .price-card {
         margin-top: 50px;
     }
 
@@ -137,8 +161,9 @@ h4{
     }
 
 }
+
 @media (max-width: 1100px) {
-    .price-card{
+    .price-card {
         margin-top: 50px;
     }
 }
