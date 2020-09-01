@@ -1,16 +1,29 @@
-function scrollBottom(){
-    window.scrollTo({ 
-        top: document.querySelector(".page.intro").offsetHeight,
-        left: 0, 
-        behavior: 'smooth' 
-      });
+function scrollBottom() {
+  window.scrollTo({
+    top: document.querySelector(".page.intro").offsetHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
 }
-$(function(){
+$(function () {
 
   var activeurl = window.location.pathname;
-  $('a[href="'+activeurl+'"]').parent('li').addClass('active');
+  $('ul a').each(function () {
+    paths = this.getAttribute("href")
+    path = ""
+    for( i =0;i< paths.length;i++){
+      if (paths[i] != '#') {
+        path = path + paths[i] ;
+      }
+      else { break; }
+    }
+    if (path === activeurl) {
+
+      $(this).parent('li').addClass('active');
+    }
+  });
 
 });
 function Redirect() {
-  window.location.pathname="/price.html";
+  window.location.pathname = "/price.html";
 }

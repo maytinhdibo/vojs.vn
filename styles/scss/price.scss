@@ -2,7 +2,7 @@
     min-height: 55px;
     line-height: 30px;
     width: 96%;
-    min-width: auto;
+    min-width: 430px;
     text-align: left;
     padding: 10px;
     list-style: none !important;
@@ -117,10 +117,14 @@ h4{
         height: auto;
         min-width: auto;
         line-height: 30px !important;
+        display: block !important;
 
     }
     .comment {
         border-right: 0px !important;
+    }
+    .price-card{
+        margin-top: 50px;
     }
 
 }
@@ -132,4 +136,9 @@ h4{
         max-width: 83% !important;
     }
 
+}
+@media (max-width: 1100px) {
+    .price-card{
+        margin-top: 50px;
+    }
 }

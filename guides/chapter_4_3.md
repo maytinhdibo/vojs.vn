@@ -11,4 +11,4 @@
 - Hệ thống VOJS hỗ trợ đa ngôn ngữ. Bạn có thể điều chỉnh trang web chỉ hiển thị tiếng Việt hoặc tiếng Anh
 
 **4. Làm thế nào để tích hợp email thông báo?**
-- Để tích hợp email thông báo bạn thực hiện theo các bước [tại đây](/). Nếu bạn gặp vấn đề, vui lòng liên hệ trực tiếp cho [chúng tôi](/). 
+- Để tích hợp email thông báo bạn thực hiện theo các bước [tại đây](/). Nếu bạn gặp vấn đề, vui lòng liên hệ trực tiếp cho [chúng tôi](/aboutUs.html). 

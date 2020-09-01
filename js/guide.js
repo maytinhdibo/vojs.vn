@@ -15,7 +15,6 @@ async function renderMenu() {
                     child.appendChild(paraChapter);
                 }
                 paraSection.appendChild(child);
-                console.log(paraSection);
             }
         })
 
@@ -38,8 +37,6 @@ function renderContent(){
             if (urlHash == chapter.getAttribute("data")) {
                 unTickChapters(chapters)
                 tickChapter(chapter)
-                console.log(chapter.getAttribute("data"))
-
             }
         })
         path = path = '/guides/' + urlHash + '.md'
