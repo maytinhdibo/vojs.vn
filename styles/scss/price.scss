@@ -1,4 +1,4 @@
-.item {
+.page {.item {
     min-height: 55px;
     line-height: 30px;
     width: 96%;
@@ -43,10 +43,6 @@ sup {
 .left-price {
     li {
         padding: 10px 10px 0px 30px;
-    }
-
-    .price-card {
-        // padding-bottom: 0px !important;
     }
 }
 
@@ -113,11 +109,6 @@ hr {
     }
 }
 
-.item-price {
-    // padding: 0px 25px 10px 40px;
-    // text-align: right;
-
-}
 
 h4 {
     line-height: 27px !important;
@@ -166,4 +157,5 @@ h4 {
     .price-card {
         margin-top: 50px;
     }
+}
 }
