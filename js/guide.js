@@ -18,10 +18,10 @@ async function renderMenu() {
             }
         })
 
-        renderContent();
- 
+    renderContent();
+
 }
-function renderContent(){
+function renderContent() {
     var urlHash = window.location.hash.slice(1);
     const chapters = document.querySelectorAll("#menu .chapter")
     if (urlHash == "") {
@@ -30,6 +30,14 @@ function renderContent(){
         tickChapter(chapter)
         path = '/guides/chapter_1_1.md'
         window.location.hash = "#chapter_1_1"
+    }
+    else if (urlHash.slice(0, 7) == "section") {
+        sectionId = urlHash.slice(8)
+        chapterId = "chapter_" + sectionId + "_1";
+        path = '/guides/' + chapterId + '.md'
+        window.location.hash = "#"+chapterId
+        $('a[href="#' + chapterId + '"]').parent('li').addClass('red');
+
     }
     else {
         chapters.forEach(chapter => {
@@ -48,7 +56,7 @@ function renderContent(){
             document.querySelector("#content").innerHTML = marked(data);
         });
 }
-window.onhashchange = function() {
+window.onhashchange = function () {
     renderContent()
 }
 
@@ -77,9 +85,15 @@ document.addEventListener("DOMContentLoaded", async function (event) {
     const chapters = document.querySelectorAll("#menu .chapter");
     sections.forEach(section => {
         section.addEventListener("click", function (evt) {
-            sectionId = section.getAttribute("href").slice(9);
-            chapterId = "#chapter_" + sectionId + "_1";
-
+            sectionId = section.getAttribute("data").slice(8);
+            chapterId = "chapter_" + sectionId + "_1";
+            path = '/guides/' + chapterId + '.md'
+            $('a[href="#' + chapterId + '"]').parent('li').addClass('red');
+            fetch(path)
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector("#content").innerHTML = marked(data);
+                });
         });
     });
     chapters.forEach(chapter => {
@@ -87,7 +101,6 @@ document.addEventListener("DOMContentLoaded", async function (event) {
             unTickChapters(chapters)
 
             tickChapter(chapter)
-            // datafile = chapter.getAttribute("href").slice(1);
             datafile = chapter.getAttribute("data");
             path = '/guides/' + datafile + '.md'
 
@@ -113,7 +126,7 @@ function tickChapter(chapter) {
     chapter.classList.add("red");
     chapter.setAttribute("isClick", "true");
 }
-function unTickChapters(chapters){
+function unTickChapters(chapters) {
     for (i = 0; i < chapters.length; i++) {
         if (chapters[i].getAttribute("isClick") == "true") {
             chapters[i].classList.remove("red")

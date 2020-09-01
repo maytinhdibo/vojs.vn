@@ -3,17 +3,16 @@
 > **Các yêu cầu về kỹ thuật khi cài đặt hệ thống OJS**
  
 
- **1. Máy chủ (server):**
+**1. Máy chủ (server):**
+- Ổ cứng: trống 50GB, đơn vị đảm bảo ổ cứng có RAID để đảm bảo an toàn dữ liệu khi sự cố
+- RAM: tối thiểu 2GB
+- CPU: tối thiểu 2 core
+- Kết nối: Đảm bảo kết nối có thể truy cập từ xa, có thể SSH được
+- Hệ điều hành: Ubuntu 18.04, Ubuntu 20.04 hoặc CentOS
 
-	 - Tối thiểu 4GB RAM.
-	 - Tối thiểu 16GB bộ nhớ còn trống.
-	 - Nên sử dụng máy chủ Linux (ưu tiên Ubuntu/CentOS).
+**2. Tên miền:**
+- Có thể là tên miền tự đăng ký hoặc tên miền phụ của cơ quan/tổ chức.
 
- **2. Tên miền:**
-
-	 - Có thể là tên miền tự đăng ký hoặc tên miền phụ của cơ quan/tổ chức.
-
- **3. Email:**
-
-	 - Có email chung cho các tác giả không có thông tin về email.
-	 - Cung cấp một cấu hình email qua phương thức SMTP (nếu sử dụng quy trình phản biện).
+**3. Email:**
+- Có email chung cho các tác giả không có thông tin về email.
+- Cung cấp một cấu hình email qua phương thức SMTP (nếu sử dụng quy trình phản biện).

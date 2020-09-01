@@ -1,7 +1,7 @@
 > **Sở hữu một tạp chí trên nền tảng VOJS**
 
 **1. Tôi không có hạ tầng máy chủ, làm thế nào để tôi có thể sở hữu một trang VOJS của riêng mình?**
--  Để sở hữu một trang VOJS của riêng mình khi bạn không có hạ tầng máy chủ thì bạn chỉ cần mua hosting [tại đây](#chapter_4_1). 
+-  Để sở hữu một trang VOJS của riêng mình khi bạn không có hạ tầng máy chủ thì bạn có thể thuê dịch vụ của [chúng tôi](#chapter_4_1). 
 
 **2. Làm thế nào để liên hệ để cài đặt?**
 - Để cài đặt VOJS, bạn có thể liên hệ với chúng tôi [tại đây](#chapter_4_1).
@@ -10,6 +10,7 @@
 - Sau khi cài đặt VOJS, bạn có thể tự vận hành hệ thông của mình. Tuy nhiên, nếu có bất kì vấn đề gì bạn có thể để lại câu hỏi cho chúng tôi [tại đây](#chapter_4_1) hoặc liên lạc trực tiếp với [chúng tôi](https://www.facebook.com/).
 
 **4. Yêu cầu phần cứng để cài đặt gồm những gì?**
+- Ổ cứng: trống 50GB, đơn vị đảm bảo ổ cứng có RAID để đảm bảo an toàn dữ liệu khi sự cố
 - RAM: tối thiểu 2GB
 - CPU: tối thiểu 2 core
 - Kết nối: Đảm bảo kết nối có thể truy cập từ xa, có thể SSH được

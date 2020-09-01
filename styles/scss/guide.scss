@@ -12,7 +12,7 @@
             max-width: 100%;
             text-align: center;
             border: 2px solid #f9f9fb;
-            border-radius: 15px;
+            border-radius: 5px;
         }
 
         blockquote {
@@ -120,6 +120,12 @@
             font-weight: 700;
             border-radius: 0 0 0 6px;
             z-index: 1;
+        }
+        #content {
+            padding: 20px;
+            ul{
+                padding: 20px;
+            }
         }
     }
 }
