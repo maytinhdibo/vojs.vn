@@ -1,5 +1,5 @@
 
->  **Cách thức liên lạc**
+>  **Thông tin liên hệ**
 
 **VOJS - Hệ thống Tạp chí Khoa học Việt Nam**
 

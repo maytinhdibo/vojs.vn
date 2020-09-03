@@ -2,6 +2,7 @@
 
 > **Các yêu cầu về kỹ thuật khi cài đặt hệ thống OJS**
  
+ ***Nếu bạn lựa chọn dịch vụ thuê máy chủ của chúng tôi, xin vui lòng bỏ qua bước này, chúng tôi sẽ thiết lập mọi thứ giúp bạn.***
 
 **1. Máy chủ (server):**
 - Ổ cứng: trống 50GB, đơn vị đảm bảo ổ cứng có RAID để đảm bảo an toàn dữ liệu khi sự cố

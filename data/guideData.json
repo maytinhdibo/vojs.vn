@@ -1,7 +1,7 @@
 {
     "section": [
         {
-            "name": "Yêu cầu cài đặt",
+            "name": "Cài đặt VOJS",
             "idSection": "#section_1",
             "chapter": [
                 {
@@ -9,7 +9,7 @@
                     "idChapter": "#chapter_1_1"
                 },
                 {
-                    "name": "Lựa chọn cấu hình",
+                    "name": "Lựa chọn giao diện",
                     "idChapter": "#chapter_1_2"
                 }
             ]
@@ -41,7 +41,7 @@
             "idSection": "#section_4",
             "chapter": [
                 {
-                    "name": "Cách thức liên lạc",
+                    "name": "Thông tin liên hệ",
                     "idChapter": "#chapter_4_1"
                 },
                 {
@@ -53,7 +53,7 @@
                     "idChapter": "#chapter_4_3"
                 },
                 {
-                    "name": "Dữ liệu của VOJS",
+                    "name": "Dữ liệu, sao lưu",
                     "idChapter": "#chapter_4_4"
                 },
                 {
