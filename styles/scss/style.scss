@@ -111,7 +111,7 @@ p {
 
     .logo {
         height: 135px;
-        margin: 35px;
+        margin: 30px 30px 22px 30px;
 
     }
 
@@ -119,6 +119,7 @@ p {
         display: block;
         font-size: large;
         opacity: 0.75;
+        
     }
 
     .center {
@@ -375,6 +376,11 @@ footer {
         }
     }
 
+    .list-feature {
+        .col-md-4 {
+            padding: 0px 24px;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -536,6 +542,7 @@ footer {
         margin-top: 15px !important;
         margin: auto;
         max-width: 142px;
+        line-height: 20px;
     }
 }
 
