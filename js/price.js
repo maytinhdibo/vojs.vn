@@ -17,5 +17,5 @@ items.forEach(item => {
     })
 });
 function order() {
-    window.location.pathname = "/guide.html#chapter_4_1";
+    window.location = "/guide.html#chapter_4_1";
   }
