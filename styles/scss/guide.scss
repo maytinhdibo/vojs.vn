@@ -101,9 +101,13 @@
             transition: 0.5s;
 
             .toc-header {
+                position: relative;
                 .close-btn {
                     display: block;
-                    float: right;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 13px 16px;
                 }
             }
         }
