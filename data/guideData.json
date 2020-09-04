@@ -40,10 +40,7 @@
             "name": "Các câu hỏi thường gặp",
             "idSection": "#section_4",
             "chapter": [
-                {
-                    "name": "Thông tin liên hệ",
-                    "idChapter": "#chapter_4_1"
-                },
+
                 {
                     "name": "Sở hữu một tạp chí trên nền tảng VOJS",
                     "idChapter": "#chapter_4_2"
@@ -59,8 +56,11 @@
                 {
                     "name": "Điểm khác biệt của VOJS",
                     "idChapter": "#chapter_4_5"
+                },
+                {
+                    "name": "Thông tin liên hệ",
+                    "idChapter": "#chapter_4_1"
                 }
-                
             ]
         }
     ]
