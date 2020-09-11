@@ -11,9 +11,9 @@ $(function () {
   $('ul a').each(function () {
     paths = this.getAttribute("href")
     path = ""
-    for( i =0;i< paths.length;i++){
+    for (i = 0; i < paths.length; i++) {
       if (paths[i] != '#') {
-        path = path + paths[i] ;
+        path = path + paths[i];
       }
       else { break; }
     }
@@ -27,3 +27,12 @@ $(function () {
 function Redirect() {
   window.location.pathname = "/price.html";
 }
+const items = document.querySelectorAll(".timeline-item");
+items.forEach(item => {
+  item.addEventListener("click", function (evt) {
+    var hrefItem = item.getAttribute("href")
+    if (hrefItem != null) {
+      window.location.href = hrefItem;
+    }
+  })
+})
