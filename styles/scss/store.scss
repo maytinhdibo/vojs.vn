@@ -1,0 +1,62 @@
+.row {
+    margin: auto !important;
+}
+
+.thumb-info-wrapper {
+    padding: 4px;
+    border: 1px solid #e6e0e0;
+    border-radius: 4px;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 10px 10px 20px 10px;
+}
+
+.demo1 {
+    background: url("/img/img_theme/demojounal1.png");
+
+    &:hover {
+        background-position: bottom;
+        transition: background-position 0.8s linear 0s;
+    }
+}
+
+.info-image {
+    min-height: 232px;
+    display: block;
+    background-size: 100% auto;
+    position: relative;
+    z-index: 2;
+}
+
+.fa-spin {
+    background: transparent none repeat scroll 0 0;
+    color: #ccc;
+    font-size: 25px;
+    left: 50%;
+    margin: -13px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.theme-name {
+    text-align: center;
+    font-size: 14px;
+}
+
+.theme-item {
+    button {
+        width: 132px;
+        height: 45px;
+        border: 2px solid #f9f9fb;
+        border-radius: 28px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .button-theme-item{
+       margin-top: 25px;
+       margin-left: calc( 50% - 137px);
+    }
+}
