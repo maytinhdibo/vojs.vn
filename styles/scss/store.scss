@@ -21,6 +21,14 @@
         transition: background-position 0.8s linear 0s;
     }
 }
+.demo2 {
+    background: url("/img/img_theme/demojounal2.png");
+
+    &:hover {
+        background-position: bottom;
+        transition: background-position 0.8s linear 0s;
+    }
+}
 
 .info-image {
     min-height: 232px;
