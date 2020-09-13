@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VOJS - Hệ thống Tạp chí Khoa học Việt Nam</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+    <title>VOJS - Hệ thống Tạp chí Khoa học Việt Nam</title>
+
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
 
 
-<link rel="stylesheet" href="styles/css/style.css">
-<link rel="stylesheet" href="styles/css/reponsive.css">
-<link rel="stylesheet" href="styles/css/store.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/f70a6f4a6e.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-@@include('../layouts/gtag.html')
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/reponsive.css">
+    <link rel="stylesheet" href="styles/css/store.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f70a6f4a6e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    @@include('../layouts/gtag.html')
 </head>
+
 <body style="height: 100vh;">
     @@include('../layouts/header.html')
     <div class="page">
         <div class="title">Kho giao diện</div>
-        <div class="row">
-            <div class="col-md-4 theme-item">
+        <div class="row container-fluid">
+            <div onclick="demo('VN01', 1);" class="col-md-4 theme-item">
+                <span class="thumb-info-wrapper">
+                    <span class="lazy info-image demo1"></span>
+                    <i class="fa fa-spinner fa-spin fa-fw"></i>
+                </span>
+                <div class="theme-name">Giao diện mã VN01</div>
+                <div class="button-theme-item">
+                    <button class="btn vojs-btn">Xem thử</button>
+                </div>
+            </div>
+            <div onclick="demo('VN02', 2);" class="col-md-4 theme-item">
+                <span class="thumb-info-wrapper">
+                    <span class="lazy info-image demo1"></span>
+                    <i class="fa fa-spinner fa-spin fa-fw"></i>
+                </span>
+                <div class="theme-name">Giao diện mã VN02</div>
+                <div class="button-theme-item">
+                    <button class="btn vojs-btn" onclick="demo();">Xem thử</button>
+                </div>
+            </div>
+
+            <div id="preview-demo">
+                <iframe id="preview-iframe" src="/demo/demo1"></iframe>
+                <div class="container preview-detail">
+                    <b>Trình xem trước giao diện: </b><span class="name">Giao diện demo</span>
+                    <button id="close-preview" class="btn vojs-btn ">Đóng trình xem</button>
+                    <a href="/aboutUs.html"><button class="btn vojs-btn">Liên hệ</button></a>
+                </div>
+
+            </div>
+
+            <script src="js/store.js"></script>
+
+            <!-- <div class="col-md-4 theme-item">
                 <span class="thumb-info-wrapper">
                     <span class="lazy info-image demo1"></span>
                     <i class="fa fa-spinner fa-spin fa-fw"></i>
@@ -38,29 +73,7 @@
                     <button class="btn vojs-btn" onclick="demo();">Xem thử</button>
                     <button class="btn vojs-btn" onclick="order();">Liên hệ</button>
                 </div>
-            </div>
-            <div class="col-md-4 theme-item">
-                <span class="thumb-info-wrapper">
-                    <span class="lazy info-image demo1"></span>
-                    <i class="fa fa-spinner fa-spin fa-fw"></i>
-                </span>
-                <div class="theme-name">VOJS 3.x Theme | VOJS 3.x Modern Theme Sample #17</div>
-                <div class="button-theme-item">
-                    <button class="btn vojs-btn" onclick="demo();">Xem thử</button>
-                    <button class="btn vojs-btn" onclick="order();">Liên hệ</button>
-                </div>
-            </div>
-            <div class="col-md-4 theme-item">
-                <span class="thumb-info-wrapper">
-                    <span class="lazy info-image demo1"></span>
-                    <i class="fa fa-spinner fa-spin fa-fw"></i>
-                </span>
-                <div class="theme-name">VOJS 3.x Theme | VOJS 3.x Modern Theme Sample #17</div>
-                <div class="button-theme-item">
-                    <button class="btn vojs-btn" onclick="demo();">Xem thử</button>
-                    <button class="btn vojs-btn" onclick="order();">Liên hệ</button>
-                </div>
-            </div>
+            </div> -->
         </div>
     </div>
     @@include('../layouts/footer.html')

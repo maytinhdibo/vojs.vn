@@ -590,6 +590,7 @@ footer {
   right: 2.5em;
   transition: 0.25s;
   padding: 0 0.5em;
+  z-index: 3;
 
   &:hover {
     .contact-item {
