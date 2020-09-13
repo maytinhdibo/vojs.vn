@@ -123,6 +123,19 @@ p {
     }
   }
 
+  .text-center-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    ul{
+      padding-inline-start: 16px;
+      line-height: 2;
+    }
+    h4{
+      margin-bottom: 20px;
+    }
+  }
+
   .logo {
     height: 135px;
     margin: 30px 30px 22px 30px;
