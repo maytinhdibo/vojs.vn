@@ -27,8 +27,8 @@ $(function () {
 function Redirect() {
   window.location.pathname = "/price.html";
 }
-const items = document.querySelectorAll(".timeline-item");
-items.forEach(item => {
+const timelineItems = document.querySelectorAll(".timeline-item");
+timelineItems.forEach(item => {
   item.addEventListener("click", function (evt) {
     var hrefItem = item.getAttribute("href")
     if (hrefItem != null) {
@@ -36,3 +36,6 @@ items.forEach(item => {
     }
   })
 })
+function order() {
+  window.location = "/aboutUs.html";
+}

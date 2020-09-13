@@ -16,6 +16,3 @@ items.forEach(item => {
 
     })
 });
-function order() {
-    window.location = "/guide.html#chapter_4_1";
-  }
