@@ -395,6 +395,11 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  .active {
+    .fas {
+      color: var(--white) !important;
+    }
+  }
   #header {
     .nav-item {
       margin: 0 16px;
@@ -587,11 +592,7 @@ footer {
   }
 }
 
-.active {
-  .fas {
-    color: var(--white) !important;
-  }
-}
+
 
 .customer-info:hover {
   text-decoration: none;
