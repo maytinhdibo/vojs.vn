@@ -1,8 +1,8 @@
-const themeItems= document.querySelectorAll(".info-image");
-themeItems.forEach(themeItem =>{
+const themeItems = document.querySelectorAll(".info-image");
+themeItems.forEach(themeItem => {
     nameTheme = themeItem.getAttribute('name');
-    path = "/img/img_theme/"+nameTheme+".png";
-    url = "url('"+ path +"')";
+    path = "/img/img_theme/" + nameTheme + ".png";
+    url = "url('" + path + "')";
     themeItem.style.backgroundImage = url;
     console.log(themeItem);
     console.log(url);
