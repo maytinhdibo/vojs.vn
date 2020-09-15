@@ -13,29 +13,17 @@
     margin: 10px 10px 20px 10px;
 }
 
-.demo1 {
-    background: url("/img/img_theme/demojounal1.png");
-
-    &:hover {
-        background-position: bottom;
-        transition: background-position 0.8s linear 0s;
-    }
-}
-.demo2 {
-    background: url("/img/img_theme/demojounal2.png");
-
-    &:hover {
-        background-position: bottom;
-        transition: background-position 0.8s linear 0s;
-    }
-}
-
 .info-image {
     min-height: 232px;
     display: block;
     background-size: 100% auto;
     position: relative;
     z-index: 2;
+
+    &:hover {
+        background-position: bottom;
+        transition: background-position 0.8s linear 0s;
+    }
 }
 
 .fa-spin {
@@ -120,9 +108,10 @@
 @media only screen and (max-width: 767px) {
     #preview-demo {
         .preview-detail {
-            button{
+            button {
                 width: 50% !important;
             }
+
             #close-preview {
                 // width: 50%;
                 right: 50%;
