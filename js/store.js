@@ -9,11 +9,10 @@ themeItems.forEach(themeItem => {
 })
 function demo(ItemTheme) {
     // document.querySelector("#preview-demo .name").innerHTML = "Mã " + name;
-    // document.querySelector("#preview-iframe").src = "/demo/demo" + id;
-    // window.open(herf)
-    // document.querySelector("#preview-demo").style.display = "block";
-    window.open(ItemTheme)
+    document.querySelector("#preview-iframe").src = ItemTheme;
+    document.querySelector("#preview-demo").style.display = "block";
+    // window.open(ItemTheme)
 }
-// document.querySelector("#close-preview").addEventListener("click", function () {
-//     document.querySelector("#preview-demo").style.display = "none";
-// });
+document.querySelector("#close-preview").addEventListener("click", function () {
+    document.querySelector("#preview-demo").style.display = "none";
+});
