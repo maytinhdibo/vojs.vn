@@ -4,14 +4,16 @@ themeItems.forEach(themeItem => {
     path = "/img/img_theme/" + nameTheme + ".png";
     url = "url('" + path + "')";
     themeItem.style.backgroundImage = url;
-    console.log(themeItem);
-    console.log(url);
 })
-function demo(ItemTheme) {
+function demo(url) {
     // document.querySelector("#preview-demo .name").innerHTML = "Mã " + name;
-    document.querySelector("#preview-iframe").src = ItemTheme;
-    document.querySelector("#preview-demo").style.display = "block";
-    // window.open(ItemTheme)
+    console.log(url);
+    if (url.indexOf("http://") != 0) {
+        document.querySelector("#preview-iframe").src = url;
+        document.querySelector("#preview-demo").style.display = "block";
+    } else {
+        window.open(url)
+    }
 }
 document.querySelector("#close-preview").addEventListener("click", function () {
     document.querySelector("#preview-demo").style.display = "none";
