@@ -33,7 +33,7 @@
 
     Cần chú ý các mục sau:
     - Tên
-    - Email
+    - E-mail
     - Cơ quan
     - Đóng góp
 

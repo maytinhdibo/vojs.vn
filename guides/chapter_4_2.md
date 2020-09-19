@@ -7,7 +7,7 @@
 - Để cài đặt VOJS, bạn có thể liên hệ với chúng tôi [tại đây](#chapter_4_1).
 
 **3. Tôi muốn chỉ muốn cài đặt một lần trên máy chủ của tôi và tự vận hành có được không?**
-- Sau khi cài đặt VOJS, bạn có thể tự vận hành hệ thông của mình. Tuy nhiên, nếu có bất kì vấn đề gì bạn có thể để lại câu hỏi cho chúng tôi [tại đây](#chapter_4_1) hoặc liên lạc trực tiếp với [chúng tôi](https://www.facebook.com/).
+- Sau khi cài đặt VOJS, bạn có thể tự vận hành hệ thông của mình. Tuy nhiên, nếu có bất kì vấn đề gì bạn có thể để lại câu hỏi cho chúng tôi [tại đây](#chapter_4_1) hoặc liên lạc trực tiếp với [chúng tôi](https://www.facebook.com/vojs.vn).
 
 **4. Yêu cầu phần cứng để cài đặt gồm những gì?**
 - Ổ cứng: trống 50GB, đơn vị đảm bảo ổ cứng có RAID để đảm bảo an toàn dữ liệu khi sự cố
