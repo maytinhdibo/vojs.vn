@@ -15,28 +15,6 @@
             ]
         },
         {
-            "name": "Hướng dẫn đăng bài nhanh",
-            "idSection": "#section_2",
-            "chapter": [
-                {
-                    "name": "Tạo số báo",
-                    "idChapter": "#chapter_2_1"
-                },
-                {
-                    "name": "Tạo bài báo",
-                    "idChapter": "#chapter_2_2"
-                },
-                {
-                    "name": "Xuất bản một số báo",
-                    "idChapter": "#chapter_2_3"
-                },
-                {
-                    "name": "Sửa bài báo hoặc số báo",
-                    "idChapter": "#chapter_2_4"
-                }
-            ]
-        },
-        {
             "name": "Các câu hỏi thường gặp",
             "idSection": "#section_4",
             "chapter": [
