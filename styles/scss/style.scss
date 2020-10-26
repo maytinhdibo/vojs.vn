@@ -80,6 +80,16 @@ p {
     opacity: 1;
   }
 
+  .theme-store-link {
+    color: white;
+    opacity: 1;
+    background: var(--primary-color);
+    border-radius: 60px;
+    .nav-link {
+      color: white;
+    }
+  }
+
   .navbar-brand {
     position: relative;
     padding-left: 1.75em;

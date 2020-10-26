@@ -27,6 +27,9 @@ $(function () {
 function Redirect() {
   window.location.pathname = "/price.html";
 }
+function RedirectToThemeStore() {
+  window.location.pathname = "/store.html";
+}
 const timelineItems = document.querySelectorAll(".timeline-item");
 timelineItems.forEach(item => {
   item.addEventListener("click", function (evt) {
