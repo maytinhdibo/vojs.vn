@@ -1,0 +1,10 @@
+<version>
+    <application>vojs</application>
+    <type>core</type>
+    <release>3.2.1.1</release>
+    <tag>3_2_1-1</tag>
+    <vojs>0.9.0</vojs>
+    <date>2020-10-12</date>
+    <info>https://vojs.vn/</info>
+    <package>https://github.com/maytinhdibo/vojs</package>
+</version>
